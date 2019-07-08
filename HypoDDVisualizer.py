@@ -1,7 +1,7 @@
 '''
 Open Source HypoDD Output Visualizer
 extends matplotlib 3d scatterplot to plot data from a .loc file against 
-a .reloc file
+a .reloc file - WORK IN PROGRESS
 
 <3 Zev 2019
 '''
