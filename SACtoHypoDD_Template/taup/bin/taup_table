@@ -1,0 +1,25 @@
+#!/bin/sh
+
+if [ -z "${JAVA}" ] ; then
+JAVA=java
+fi
+if [ -z "${TAUPPATH}" ] ; then
+TAUPPATH=.
+fi
+if [ -z "${TAUP_HOME}" ] ; then
+TAUP_HOME=.
+fi
+LIB=${TAUP_HOME}/lib
+
+LOG4J=${LIB}/log4j-1.2.8.jar
+SEISFILE=${LIB}/seisFile-1.0.1.jar
+TAUP=${LIB}/TauP-1.1.7.jar
+
+CLASSPATH=${LOG4J}:${SEISFILE}:${TAUP}
+
+
+${JAVA} -Dseis.name=TauP-1.1.7.taup_table \
+-Xmx128m \
+-Dtaup.model.path=${TAUPPATH} \
+-Djava.endorsed.dirs= \
+-cp ${CLASSPATH} edu.sc.seis.TauP.TauP_Table "$@"

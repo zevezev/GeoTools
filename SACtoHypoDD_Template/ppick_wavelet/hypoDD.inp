@@ -1,0 +1,52 @@
+* hypoDD.inp:
+*--- INPUT FILE SELECTION
+* filename of cross-corr diff. time input(blank if not available):
+dt.cc
+* filename of catalog travel time input(blank if not available):
+dt.ct
+* filename of initial hypocenter input:
+event.dat
+* filename of station input:
+station.dat
+*
+*--- OUTPUT FILE SELECTION
+* filename of initial hypocenter output (if blank: output to hypoDD.loc):
+hypoDD.loc
+* filename of relocated hypocenter output (if blank: output to hypoDD.reloc):
+hypoDD.reloc
+* filename of station residual output (if blank: no output written):
+hypoDD.sta
+* filename of data residual output (if blank: no output written):
+hypoDD.res
+* filename of takeoff angle output (if blank: no output written):
+hypoDD.src
+*
+*--- DATA SELECTION:
+* IDAT IPHA DIST
+1 1 100
+*
+*--- EVENT CLUSTERING:
+* OBSCC OBSCT
+2 0
+*
+*--- SOLUTION CONTROL:
+* ISTART ISOLV NSET
+2 2  2
+*
+*--- DATA WEIGHTING AND REWEIGHTING:
+* NITER WTCCP WTCCS WRCC WDCC WTCTP WTCTS WRCT WDCT DAMP
+10 1 0 2 6 -9 -9 -9 -9 0.1
+10 1 0 2 6 -9 -9 -9 -9 0.1
+*
+*--- MODEL SPECIFICATIONS:
+* NLAY RATIO
+7 1.73
+* TOP:
+0.0 1.0 2.0 6.0 20.0 30.0 200.0
+* VEL:
+2.10 3.60 5.10 6.40 7.40 8.10 8.26
+*
+*--- CLUSTER/EVENT SELECTION:
+* CID
+0
+* ID

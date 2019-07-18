@@ -1,0 +1,38 @@
+
+
+
+                      The TauP Toolkit
+             Flexible Seismic Travel-Time Utilities
+
+Getting a copy:
+http://www.seis.sc.edu
+
+
+What's where:
+README      -- this file
+lib         -- all the Java classes included in the package, along with
+               saved models for prem, iasp91, and several other earth models.
+COPYING     -- The GNU General Public License
+HISTORY     -- change log
+bin         -- directory containing "wrapper scripts" to start the tools
+               each will print a usage with a -help command line argument.
+               The TAUP_HOME environment variable needs to be set for these
+               scripts to work. .bat files for windows are also included.
+
+doc         -- directory containing postscript and pdf versions of the manual,
+               installation instructions are in the appendix.
+apidocs     -- a directory with the javadoc output from the source code, 
+               mainly useful for writing new java programs that use the 
+               TauP package.
+src         -- source code for all objects in the package
+modelFiles  -- text files for the velocity models
+native      -- example of calling TauP from C
+jacl        -- example of using TauP within a jacl (Java TCL) script
+Maple       -- some Maple files used in deriving equations used in TauP
+exampleProperties -- example configuration of TauP
+
+Installation:
+
+Detailed installation instructions are in an appendix to the manual, 
+in the doc directory.
+

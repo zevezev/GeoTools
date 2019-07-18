@@ -1,0 +1,9 @@
+* ph2dt.inp
+*--- I/O FILES:
+* filename of station input:
+station.dat
+* filename of phase data input:
+phase.dat
+*--- DATA SELECTION PARAMETERS:
+* MINWGHT MAXDIST MAXSEP MAXNGH MINLNK MINOBS MAXOBS
+   0       1000     5     1000    4      1      50
