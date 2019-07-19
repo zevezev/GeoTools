@@ -1,0 +1,1 @@
+Yr Mo Da Hr Mi Se stations{i} TT TTTau ttdiff ttndiff weight
